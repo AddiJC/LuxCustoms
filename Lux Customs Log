@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +6,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #86d1fc;
+      background-color: #074500;
       margin: 0;
       padding: 20px;
     }
@@ -317,14 +315,15 @@
     }
 
     function sendToDiscord() {
-      const generalWebhookURL = ""; // Replace with your actual webhook URL
+      const generalWebhookURL = "https://discord.com/api/webhooks/1389541958661312592/vw18dpj9pi6kESZAEkNe_vZHLxXxH3Ab5pBBczgoZFNogp-BIG82-soPAGRyguJuzGdg"; // Replace with your actual webhook URL
       const pdRepairWebhookURL = ""; // Replace with your actual PD Repair webhook URL
 
       const messageContent = `\`\`\`
-Mechanic Log Submission
-------------------------
-Customer Name: ${document.getElementById('customerName').value || 'N/A'}
+Mechanic Work Log
+---------------------------------
 Mechanic: ${document.getElementById('mechanicName').value || 'N/A'}
+
+Customer Name: ${document.getElementById('customerName').value || 'N/A'}
 Plate Number: ${document.getElementById('plateNumber').value || 'N/A'}
 Vehicle Model: ${document.getElementById('vehicleModel').value || 'N/A'}
 
